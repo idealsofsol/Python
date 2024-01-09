@@ -16,5 +16,13 @@ elif(percentage > 65):
 else:
     print("fail")
 
-
-
+print("enter value of a")
+a=int(input())
+print("enter value of b")
+b=int(input())
+if(a > b):
+    print("big number is a")
+elif(b > a):
+    print("big number is b")
+else:
+    print("both are equal")
