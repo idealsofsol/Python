@@ -13,4 +13,4 @@ elif(operation == 3):
 elif(operation == 4):
     print(f'div of {input1} and {input2} is :: {input1%input2}')
 else:
-    print('not exsisted2')
+    print('not exsisted')
