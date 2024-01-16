@@ -2,15 +2,28 @@
 #Sample list : ['p', 'q']
 #n =5
 #Sample Output : ['p1', 'q1', 'p2', 'q2', 'p3', 'q3', 'p4', 'q4', 'p5', 'q5']
-class concat()
-    def concating(l):
-        n=5
-        l2=[]
+class Concat:
+    def __init__(self):
+        pass
+    def concating(self, l:list):
+        n = 5
+        l2 = []
         for i in range(n):
             for y in l:
                 l2.append((y+str(i)))
-                f'{y}{i}')
-
+                #print(f'{y}{i}')
         print(l2)
-    Sample_list= ['p', 'q']
-    concating(Sample_list)
+
+if __name__ == '__main__':
+    obj=Concat()
+    Sample_list = ['p', 'q']
+    obj.concating(Sample_list)
+    #print('concat')
+
+
+
+
+
+
+
+
