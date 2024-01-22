@@ -14,7 +14,7 @@ for i in range(1, number + 1, 1):
     print(f'value of i :: {i}')
     print('sum is : ', s)
 
-a = 'Anjali good girl'
+a =input("enter any string ")
 for i in a:
     print(i)
 
@@ -31,3 +31,26 @@ for id in list_ids:
     id +=2
     y = id
     print(y)
+
+
+
+s = 'Hello welcome to python'
+for i in range(10):
+    print(s)
+
+for n in range(21):
+   if(n%2 != 0):
+       print(n)
+
+
+
+for i in range(10,20,+2):
+    print(i)
+
+
+list = eval(input("enter list of numbers: "))
+sum = 0
+for i in list:
+    sum = sum + i
+    print("the sum of i : ", sum)
+
