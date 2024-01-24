@@ -19,14 +19,15 @@ if __name__ == '__main__':
     x.multi(10)
     x.list()
     x.digits(234567)
-    # x.reverse(5)
+    x.reverse(5)
     x.rev()
     x.loop()
     x.msg(5)
     # x.prime(31)
     x.fib(8)
     x.fact(5)
-    # x.int_num(2345)
+    x.int_num(76542)
     x.display()
     x.cube(5)
+
 

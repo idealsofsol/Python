@@ -44,11 +44,20 @@ class Test:
             c=c+1
         print(c)
 #Write a program to use for loop to print the following reverse number pattern
-    def reverse(self):
-        for i in range(1,n+1):
-            #for j in range(i,-1):
-                #print(' '.join(j))
-            print(i)
+    def reverse_name(self):
+        name='abcd'
+        rev_strng=''
+        rev1=''
+        size=len(name)
+        #print(size)
+        for i in range(size-1,-1,-1):
+            rev_strng= rev_strng+(name[i])
+        print(rev_strng)
+        for c in name:
+            rev1=c+rev1
+        print(rev1)
+
+
 #Print list in reverse order using a loop
     def rev(self):
         list1 = [10, 20, 30, 40, 50]
@@ -68,18 +77,17 @@ class Test:
                 print(i)
 #Write a program to display all prime numbers within a range
 
-    #def prime(self,n):
-        #for i in range(0, n+1):
-           #if i==2:
-             #   print(i)
-            #elif i==3:
-             #   print(i)
-            #elif i%2==0 :
-             #   print('not prime')
-            #elif i%3==0:
-             #   print('not prime')
-            #else:
-                #print(i)
+    def prime(self,n):
+        for num in range(0, n+1):#7
+           if num>1:
+               for i in range(2,num):#2,3,4,5,6
+                    if num%i==0:#7/6
+                        #print('not prime')
+                        break
+
+               else:
+                    print(num)
+
 
 #Display Fibonacci series up to 10 terms
     def fib(self,n):
@@ -98,10 +106,18 @@ class Test:
             r=r*i
         print(r)
 #reverse a given integer number
-    #def int_num(self,x):
+    def int_num(self,x):
 
-     #   y=reversed(x)
-      #  print(str(y))
+
+        reverse_number = 0
+        print("Given Number ", num)
+        while num > 0:  # 76542 #7654
+            reminder = num % 10  # 2,4,6,7
+            # print(reminder)
+            reverse_number = (reverse_number * 10) + reminder  # 24567
+            num = num // 10  # removes decimal 7654, 765,76,7,0
+            print(num)
+        print("Revere Number ", reverse_number)
 #Use a loop to display elements from a given list present at odd index positions
     def display(self):
         x = [2, 3, 4, 5, 6, 7, 8]
