@@ -1,3 +1,5 @@
 x=" Hello world "
 print(x.upper())
-print(x.strip())
+
+y=" Strip Sample "
+print(y.strip())
