@@ -13,6 +13,13 @@ result=subtract(num1,num2)
 
 print("The differance of", num1, "and",num2, "is:",result)
 
+def multiply(x,y):
+ return x*y
+num1=20
+num2=10
+result=multiply(num1,num2)
+
+print("The multiplication of", num1, "and",num2, "is:",result)
 
 def divide(x,y):
  return x/y
