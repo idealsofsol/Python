@@ -1,16 +1,35 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from calculater import Calculator
 
 
+def print_hi(name:str):
+    print(f'Hi, {name}') 
 
-# Press the green button in the gutter to run the script.
+def run_calculator():
+    print("Welcome to calculator")
+    num1:int = int(input("Enter first number: "))
+    num2:int = int(input("Enter second number: ")) 
+
+    print("Select operation:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    choice = input("Enter choice (1/2/3/4):")
+
+    calsi =  Calculator()
+
+    if choice == '1':
+        calsi.add(num1,num2)
+    elif choice == '2':
+        calsi.subtract(num1,num2)
+    elif choice == '3':
+        calsi.multiply(num1,num2)
+    elif choice == '4':
+        calsi.division(num1,num2)
+    else:
+        print("Invalid Input")
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print_hi('Im from main file')
+    run_calculator()
