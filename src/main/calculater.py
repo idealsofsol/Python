@@ -1,7 +1,10 @@
 class Calculator:  
+    def __init__(self):
+        print("I am from init block")
 
     def add(self,x:int,y:int):
-        return x+y
+        result = x+y
+        print(f"Addition of {x} and {y} is :", result)
 
     def subtract(self,x:int,y:int):
         result = x-y
